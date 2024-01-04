@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "helvetica";
+}
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+.loading-page{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999999999999;
+}
+
+.content{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading-page h1{
+    color: white;
+    font-family: 'Kajiro';
+    font-size: 10vw;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.progressBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.progressBar h1{
+    font-family: "futura";
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+#myProgress {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(33, 32, 32);
+  }
+
+  #myBar {
+    width: 1%;
+    height: 3px;
+    background-color: grey;
+  }
+
+.main{
+    width: 97%;
+    margin: auto;
+}
+
+.homepage{
+    width: 100%;
+    min-height: 100vh;
+}
+
+nav{
+    width: 100%;
+    padding: 1.5% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: fit-content;
+    height: fit-content;
+}
+
+.logo h1{
+    text-transform: uppercase;
+    font-size: 33px;
+    font-weight: 800;
+    line-height: 0.8;
+    font-family: "futura";
+}
+
+nav ul{
+    display: flex;
+    gap: 3.5vw;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-top: 5px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 12.5px;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.sticky{
+    background-color: red;
+}
+
+.title{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+    /* margin-top: 220px; */
+    /* transform: translateX(3.5%); */
+}
+
+.title h1{
+    text-transform: uppercase;
+    font-size: 16vw;
+    font-family: "futura";
+    line-height: 0.9;
+    letter-spacing: -10px;
+    font-weight: 900;
+}
+
+.bx{
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+#f{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bxs-right-arrow-circle:hover{
+    text-align: center;
+    transform: rotate(-35deg);
+}
+
+.bx-cart:hover{
+    transform: rotate(-15deg);
+}
+
+.bounding{
+    width: fit-content;
+    height: max-content;
+    overflow: hidden;
+}
+
+.boundingelem{
+    transform: translateY(110%);
+}
+
+.videodiv{
+    width: 100%;
+    height: 100vh;
+    margin-top: 2vw;
+}
+
+.videodiv video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play{
+    padding: 3vw 1.8vw;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    text-transform: uppercase;
+    position: fixed;
+    font-size: 2vw;
+    opacity: 0;
+    scale: 0;
+    font-weight: 900;
+}
+
+.linediv{
+    width: 100%;
+    margin: 3vw 0 1vw 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.linediv p{
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(80, 78, 78);
+    padding-bottom: 2px;
+}
+
+.second-page{
+    width: 100%;
+    min-height: 50vh;
+    margin: 1vw 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.elem{
+    width: 32.3%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.elem img{
+    width: 100%;
+    height: 100%;
+    scale: 1.2;
+    object-fit: cover;
+    object-position: top;
+}
+
+.detail-box{
+    height: 50px;
+    width: 60%;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: brown;
+    transition: all ease 0.5s;
+}
+
+.detail-box:hover{
+    height: 150px;
+}
+
+.third-page{
+    margin: 5.5vw 0 3vw;
+    width: 100%;
+    /* height: 32.5vh; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-page .left{
+    width: 50%;
+}
+
+.third-page .left h1{
+    font-size: 53px;
+    font-family: "futura";
+    line-height: 1;
+}
+
+.third-page .right{
+    width: 22%;
+    margin-right: 10%;
+}
+
+.third-page .right p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.third-page .right p:nth-child(2){
+    margin-top: 2.5vw;
+}
+
+.box{
+    margin-top: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boxElem{
+    margin-top: 2vw;
+    width: fit-content;
+    border-bottom: 1px solid black;
+}
+
+.third-page .right a{
+    font-size: 11px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(67, 64, 64);
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.fourth-page{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.F-elem{
+    margin-bottom: 6vw;
+    width: 45%;
+    /* height: 70vh; */
+}
+
+.F-elem img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.aboutElem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutElem .dets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.aboutElem .dets h4{
+    font-size: 11px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.aboutElem .dets p{
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(67, 64, 64);
+    margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .home-page{
+        width: 100%;
+        min-height: 70vh;
+    }
+
+    nav{
+        padding: 3.4% 1.4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+    }
+
+    .logo h1{
+        font-size: 27px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+    }
+
+    .title{
+        margin-top: 130px;
+    }
+
+    .title h1{
+        text-transform: uppercase;
+        font-size: 16vw;
+        font-family: "futura";
+        line-height: 0.9;
+        letter-spacing: -3px;
+        font-weight: 900;
+    }
+
+    .videodiv{
+        height: 30vh;
+        margin-top: 5vw;
+    }
+    
+}
+
+
+.try{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 10px 5px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+}
