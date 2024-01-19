@@ -164,13 +164,14 @@ nav ul li a{
     transform: translateY(110%);
 }
 
-.videodiv{
+.imagediv{
     width: 100%;
     height: 100vh;
     margin-top: 2vw;
+    border: solid 1px black;
 }
 
-.videodiv video{
+.imagediv img{
     width: 100%;
     height: 100%;
     object-fit: cover;
