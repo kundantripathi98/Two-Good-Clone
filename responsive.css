@@ -1,0 +1,12 @@
+@media screen and (max-width: 720px) {
+    nav ul{
+        display: none;
+    }
+ 
+    .linkButton{
+        padding: 1vw 2vw;
+    }
+    .linkButton i{
+        margin: 0 1vw;
+    }
+  }
