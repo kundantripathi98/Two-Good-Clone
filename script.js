@@ -4,6 +4,19 @@ const scroll = new LocomotiveScroll({
 });
 
 
+
+// gsap.from(".logo", {
+//   x: -50,
+//   opacity: 0,
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: ".second-page h3",
+//     scroller: "body",
+//     start: "top 10%",
+//     markers: true
+//   }
+// })
+
 function loadingPageAnimation(){
     gsap.to('.loading-page',{
         opacity: 0,

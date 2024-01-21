@@ -264,20 +264,41 @@ nav ul li a{
 }
 
 .detail-box{
-    height: 50px;
-    width: 60%;
+    height: 6.7vh;
+    width: 66%;
     border-radius: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translate(-50%, -50%);
-    background-color: brown;
-    transition: all ease 0.5s;
+    background-color: rgb(229,240,214);
 }
 
-.detail-box:hover{
-    height: 150px;
+.detail-box div{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
 }
+
+.detail-box p{
+    font-size: 0.9vw;
+    text-transform: uppercase;
+}
+.detail-box p:nth-child(2){
+    opacity: 0.9;
+}
+.detail-box p:nth-child(3){
+    font-weight: 700;
+    font-size: 0.85vw;
+}
+/* 
+.fa-angle-right{
+    font-size: ;
+} */
 
 .third-page{
     margin: 5.5vw 0 3vw;
