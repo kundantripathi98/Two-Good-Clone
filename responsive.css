@@ -9,4 +9,25 @@
     .linkButton i{
         margin: 0 1vw;
     }
+
+    .second-page{
+        flex-direction: column;
+    }
+
+    .detail-box p{
+        font-size: 15px;
+    }
+    .detail-box p:nth-child(3){
+        font-size: 13px;
+    }
+    .fa-angle-right{
+        font-size: 12px;
+    }
+
+    .elem{
+        width: 80%;
+        overflow: hidden;
+        /* height: 90%; */
+    }
+
   }

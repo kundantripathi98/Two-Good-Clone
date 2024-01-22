@@ -253,6 +253,9 @@ nav ul li a{
     height: 100vh;
     position: relative;
     overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .elem img{
@@ -266,22 +269,28 @@ nav ul li a{
 .detail-box{
     height: 6.7vh;
     width: 66%;
-    border-radius: 50px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 15%;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(-50%, -50%);
     background-color: rgb(229,240,214);
+    transition:height 0.2s; 
+    -webkit-transition:height 0.2s;
+}
+
+#db2{
+    background-color: rgb(245,223,207);
+}
+
+.detail-box:hover{
+    height: 20vh;
 }
 
 .detail-box div{
     display: flex;
     gap: 2vw;
     align-items: center;
+    margin-left: 10%;
 }
 
 .detail-box p{
@@ -295,7 +304,6 @@ nav ul li a{
     font-weight: 700;
     font-size: 0.85vw;
 }
-
 .fa-angle-right{
     font-size: 0.8vw;
 }
