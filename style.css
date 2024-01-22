@@ -469,3 +469,8 @@ button{
     border: none;
     font-size: 15px;
 }
+
+.nothing{
+    padding: 2vw;
+    gap: 2vw;
+}
